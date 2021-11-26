@@ -3,9 +3,10 @@ for c in range(quant):
     num_estudantes = int(input())
     nomes = input().split(' ')
     registro = input().split(' ')
-    reprovados = ''
+    reprovados = []
+    contador = 0
     for frequencia in registro:
-        media = contador = 0
+        media = 0
         tam = len(frequencia)
         for letra in frequencia:
             if letra == "P":
@@ -14,7 +15,7 @@ for c in range(quant):
                 pass
             elif letra == "M":
                 tam -= 1
-        if media <= 3/4 * tam:
-            reprovados = ' '.join(nomes[contador])
+        if media < (3 / 4) * tam:
+            reprovados.append(nomes[contador])
         contador += 1
-    print(reprovados)
+    print(' '.join(reprovados))
