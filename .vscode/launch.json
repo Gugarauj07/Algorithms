@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Algorithms_a4884908"
+        },
+        {
             "name": "Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
@@ -12,26 +19,20 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": 
-            false,
+            "externalConsole": false,
             "MIMode": "gdb",
-
             "program": "${fileDirname}/build/${fileBasenameNoExtension}",
-
             "linux": {
-               "miDebuggerPath": "/usr/bin/gdb", 
+                "miDebuggerPath": "/usr/bin/gdb"
             },
-
             "windows": {
                 "program": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
-                "miDebuggerPath": "gdb.exe",
+                "miDebuggerPath": "gdb.exe"
             },
-
             "osx": {
                 "MIMode": "lldb",
-                "externalConsole": true,
+                "externalConsole": true
             },
-            
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -39,8 +40,7 @@
                     "ignoreFailures": true
                 }
             ],
-
-            "preLaunchTask": "build active file",
+            "preLaunchTask": "build active file"
         }
     ]
 }
