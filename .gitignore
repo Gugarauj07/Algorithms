@@ -131,3 +131,5 @@ dmypy.json
 #adds
 .vscode
 .idea
+
+.exe
