@@ -4,7 +4,7 @@ var lines = input.split('\n');
 
 
 // lines = "6.0 4.0 2.0"
-var lados = lines.split(" ")
+var lados = lines.shift().split(" ")
 lados = lados.map(Number)
 
 function isTriangle(lados) {
